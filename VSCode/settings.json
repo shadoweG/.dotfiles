@@ -1,0 +1,15 @@
+{
+    "workbench.colorTheme": "Atom One Dark",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "discord.workspaceElapsedTime": true,
+    "discord.silent": true,
+    "C_Cpp.updateChannel": "Insiders",
+    "code-runner.runInTerminal": true,
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.copyOnSelection": true,
+    "workbench.productIconTheme": "fluent-icons",
+    "telemetry.enableCrashReporter": false,
+    "terminal.integrated.rendererType": "dom",
+    "vscode_vibrancy.type": "acrylic"
+}
