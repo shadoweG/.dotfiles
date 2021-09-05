@@ -12,3 +12,6 @@ Just clone and move the repo to **/home/username/** and you should be good to go
 
 ## Bash preview 
 ![alt text](bash.png "Bash")
+
+## Vim preview
+![alt text](vim.png "Vim")
