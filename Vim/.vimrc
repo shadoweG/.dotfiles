@@ -20,8 +20,15 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'mattn/emmet-vim'
 Plug 'https://github.com/ap/vim-css-color'
+Plug 'instant-markdown/vim-instant-markdown'
 
 call plug#end()
+
+    if exists('+termguicolors')
+      let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+      let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+      set termguicolors
+    endif
 
 colorscheme spaceduck 
 
@@ -41,6 +48,7 @@ set smartindent
 set smartcase
 set completeopt+=noinsert
 set encoding=UTF-8
+"set mouse=a "yes I'm a psychopath
 
 let g:rainbow_active = 1
 let g:kite_supported_languages = ['*']
@@ -50,6 +58,9 @@ let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 autocmd FileType * RainbowParentheses
-autocmd VimEnter * hi Normal ctermbg=none
+"autocmd VimEnter * hi Normal ctermbg=none
+hi Normal guibg=NONE ctermbg=NONE
+
+:command S :x !sudo tee %
 
 nmap <C-t> :NERDTreeToggle<CR>
