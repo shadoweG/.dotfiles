@@ -9,7 +9,7 @@
 [[ -f ~/.welcome_screen ]] && . ~/.welcome_screen
 
 _set_my_PS1() {
-    PS1='\e[90m[\e[36m\u\e[93m@\e[97m\h\e[90m] [\e[96m\w\e[90m] \e[97m-> \e[93m$ \e[39m'
+	PS1='\e[90m[\e[36m\u\e[93m@\e[97m\h\e[90m] [\e[96m\w\e[90m] \e[97m-> \e[93m$ \e[39m'
     if [ "$(whoami)" = "liveuser" ] ; then
         local iso_version="$(grep ^VERSION= /usr/lib/endeavouros-release 2>/dev/null | cut -d '=' -f 2)"
         if [ -n "$iso_version" ] ; then
@@ -35,6 +35,7 @@ ShowInstallerIsoInfo() {
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
+alias pogoda="curl wttr.in"
 
 [[ "$(whoami)" = "root" ]] && return
 
